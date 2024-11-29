@@ -1,0 +1,232 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Classification</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Filters</x:String>
+      <x:String>UiPath.GSuite.Activities.Filters</x:String>
+      <x:String>UiPath.GSuite.Drive.Enums</x:String>
+      <x:String>UiPath.GSuite</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="871.2,1567.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ugdm:GDriveRemoteItem[]" Name="retrievedFiles" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Null}" ManualEntryLocation="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Ah4cxGbGHDNoOg5xCifusd86D5BN5jaH" ConnectionId="e1a7c36e-02d2-4179-ad93-cbd002b9ca3d" DisplayName="Get File or Folder List" sap:VirtualizedContainerService.HintSize="550.4,184.8" sap2010:WorkflowViewState.IdRef="GetFileListConnections_1" LocationFriendlyName="ARPA" LocationInputMode="Browse" MaxResults="200" Result="[retrievedFiles]" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
+      <uga:GetFileListConnections.Item>
+        <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1Ah4cxGbGHDNoOg5xCifusd86D5BN5jaH" ConnectionKey="e1a7c36e-02d2-4179-ad93-cbd002b9ca3d" FriendlyName="ARPA" FullPathHint="My Drive/ARPA" InputMode="Browse">
+          <ugam:DriveItemArgument.Backup>
+            <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="Browse">
+              <usau:BackupSlot.BackupValues>
+                <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+              </usau:BackupSlot.BackupValues>
+            </usau:BackupSlot>
+          </ugam:DriveItemArgument.Backup>
+          <ugam:DriveItemArgument.ParentIdFullPathHint>
+            <InArgument x:TypeArguments="x:String">
+              <Literal x:TypeArguments="x:String" Value="" />
+            </InArgument>
+          </ugam:DriveItemArgument.ParentIdFullPathHint>
+        </ugam:DriveItemArgument>
+      </uga:GetFileListConnections.Item>
+    </uga:GetFileListConnections>
+    <ui:ForEach x:TypeArguments="ugdm:GDriveRemoteItem" CurrentIndex="{x:Null}" DisplayName="For Each currentGDriveRemoteItem" sap:VirtualizedContainerService.HintSize="550.4,1359.2" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[retrievedFiles]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="ugdm:GDriveRemoteItem">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ugdm:GDriveRemoteItem" Name="currentGDriveRemoteItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="516.8,1221.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence sap:VirtualizedContainerService.HintSize="483.2,1161.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="uisad:DocumentData" Name="doc" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <p:ClassifyDocument ApiKey="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassificationResults="[doc]" ClassifierId="generative_classifier" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/65f27ab9-3e4b-476e-bde3-776a06884f1a/24b8026d-bc1a-46ac-b9cf-6194c2b5856c/du_/api/framework/projects/00000000-0000-0000-0000-000000000000/classifiers/generative_classifier/classification/start?api-version=1.0" FileInput="[currentGDriveRemoteItem]" sap:VirtualizedContainerService.HintSize="449.6,312.8" sap2010:WorkflowViewState.IdRef="ClassifyDocument_2" MinimumConfidence="50" ProjectId="00000000-0000-0000-0000-000000000000" TimeoutInSeconds="3600">
+                <p:ClassifyDocument.GptPromptWithVariables>
+                  <InArgument x:TypeArguments="x:String" x:Key="Invoice">Find common field names such as Invoice number Bill to or Total Amount</InArgument>
+                </p:ClassifyDocument.GptPromptWithVariables>
+              </p:ClassifyDocument>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="449.6,122.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[doc.DocumentType.Name]" />
+              <If Condition="[doc.DocumentType.Name = &quot;Invoice&quot;]" sap:VirtualizedContainerService.HintSize="449.6,643.2" sap2010:WorkflowViewState.IdRef="If_1">
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,392" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uga:MoveFileConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" Folder="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualFileId="{x:Null}" ManualFolderId="{x:Null}" NewFileName="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BrowserFileId="https://drive.google.com/file/d/1v7HlKn0QVBn-Q8fOTqK5Og-9HZnXuGF1/view?usp=drivesdk" BrowserFolderId="https://drive.google.com/drive/folders/1uIpfl7cDi_cfN7w7fYEzJGCM7AhA8zd0" ConflictResolution="AddSeparate" ConnectionId="e1a7c36e-02d2-4179-ad93-cbd002b9ca3d" DisplayName="Move File or Folder" FileFriendlyName="Service invoice blocky design.pdf" FileInputMode="Browse" FolderFriendlyName="INVOICE_ARPA" FolderInputMode="Browse" sap:VirtualizedContainerService.HintSize="382.4,332" sap2010:WorkflowViewState.IdRef="MoveFileConnections_2" UseConnectionService="True">
+                      <uga:MoveFileConnections.Destination>
+                        <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1uIpfl7cDi_cfN7w7fYEzJGCM7AhA8zd0" ConnectionKey="e1a7c36e-02d2-4179-ad93-cbd002b9ca3d" FriendlyName="INVOICE_ARPA" FullPathHint="My Drive/INVOICE_ARPA" InputMode="Browse">
+                          <ugam:DriveItemArgument.Backup>
+                            <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
+                              <usau:BackupSlot.BackupValues>
+                                <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                              </usau:BackupSlot.BackupValues>
+                            </usau:BackupSlot>
+                          </ugam:DriveItemArgument.Backup>
+                          <ugam:DriveItemArgument.ParentIdFullPathHint>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ugam:DriveItemArgument.ParentIdFullPathHint>
+                        </ugam:DriveItemArgument>
+                      </uga:MoveFileConnections.Destination>
+                      <uga:MoveFileConnections.FileIdBackup>
+                        <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
+                          <usau:BackupSlot.BackupValues>
+                            <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                          </usau:BackupSlot.BackupValues>
+                        </usau:BackupSlot>
+                      </uga:MoveFileConnections.FileIdBackup>
+                      <uga:MoveFileConnections.Item>
+                        <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/file/d/1v7HlKn0QVBn-Q8fOTqK5Og-9HZnXuGF1/view?usp=drivesdk" ConnectionKey="e1a7c36e-02d2-4179-ad93-cbd002b9ca3d" FriendlyName="Service invoice blocky design.pdf" FullPathHint="My Drive/ARPA/Service invoice blocky design.pdf" InputMode="Browse">
+                          <ugam:DriveItemArgument.ParentIdFullPathHint>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ugam:DriveItemArgument.ParentIdFullPathHint>
+                        </ugam:DriveItemArgument>
+                      </uga:MoveFileConnections.Item>
+                    </uga:MoveFileConnections>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
